@@ -1,6 +1,6 @@
 let posts = [
-  { id: 1, title: "Teste", content: "Lorem ipsum...", createdAt: new Date(), updatedAt: new Date() }, 
-  { id: 2, title: "Teste2", content: "Lorem ipsum amen...", createdAt: new Date(), updatedAt: new Date() }
+  { id: "1", title: "Teste", content: "Lorem ipsum...", createdAt: new Date(), updatedAt: new Date() }, 
+  { id: "2", title: "Teste2", content: "Lorem ipsum amen...", createdAt: new Date(), updatedAt: new Date() }
 ]
 
 // Post = { id, title, content, createdAt, updatedAt }
