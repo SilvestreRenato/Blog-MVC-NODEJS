@@ -1,18 +1,18 @@
-const { post } = require("../routes")
+let posts = [
+  { id: 1, title: "Teste", content: "Lorem ipsum...", createdAt: new Date(), updatedAt: new Date() }, 
+  { id: 2, title: "Teste2", content: "Lorem ipsum amen...", createdAt: new Date(), updatedAt: new Date() }
+]
 
-let posts = []
-
-
-// Post { id, title, content, createdAt, updatedAt }
+// Post = { id, title, content, createdAt, updatedAt }
 
 const postModel = {
   getAllPosts() {
-
+    return posts
   },
 
   getPostById(id) {
     return posts.find(post => post.id === id)
-  }, 
+  },
 
   createPost(title, content) {
     const post = {
@@ -26,7 +26,7 @@ const postModel = {
   }, 
 
   savePost(post) {
-   posts.push(post)
+    posts.unshift(post)
   }, 
 
   updatePost(id, updatedPost) {
